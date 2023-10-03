@@ -81,6 +81,8 @@ background-color: #ed9e0b;
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 .contacts-heading {
