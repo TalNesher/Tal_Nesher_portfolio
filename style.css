@@ -1,0 +1,189 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+@keyframes gradient-animation {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+  
+.first-section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(300deg, #e9d2a3, #e6e4de, #f4d5a5);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+.Tal-in-meteora {
+    border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+    .image {
+        padding-right: 100px;
+    }
+
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.lead {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 25px;
+}
+
+.Tal-Nesher {
+    color: #ed9e0b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+
+.second-section {
+height: 200px;
+background-color: #ed9e0b;
+}
+
+.contact-btn {
+    color:#ed9e0b;
+    border-color: black;
+}
+
+.get-to-know-btn {
+    color: black;
+    background-color: #ed9e0b;
+    border-color: #ed9e0b;
+}
+
+.btn {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contacts-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contacts-heading {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 70px;
+}
+  
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+    margin-right: 20px;
+
+}
+
+.bi {
+    background-color: #ed9e0b;
+    border-radius: 0.75rem;
+}
+
+.contacts-body a {
+    color: black;
+    font-size: 20px;
+}
+
+
+.logo-icon {
+    top: 10px;
+    left: 20px;
+}
+  
+.logo-icon img {
+    width: 45px;
+    height: 45px;
+}
+
+/* CSS */
+.nesher-logo-top {
+    width: 370px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    position: fixed; /* Fix the position on the screen */
+    top: 56px; /* Distance from the top of the viewport */
+    left: 195px; /* Distance from the left of the viewport */
+    z-index: -1; /* Adjust the z-index to control stacking order */
+    transform: rotate(15deg); 
+    animation: continuous-rotation 5s linear infinite; /* Adjust the duration as needed */
+  }
+  
+  .nesher-logo-bottom-left {
+    width: 200px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    position: fixed; /* Fix the position on the screen */
+    top: 700px; /* Distance from the top of the viewport */
+    left: 200px; /* Distance from the left of the viewport */
+    z-index: -1; /* Adjust the z-index to control stacking order */
+    transform: rotate(40deg); 
+    position: absolute;
+    animation: rotate-and-move 4s linear infinite;  }
+
+  .nesher-logo-bottom-right {
+    width: 350px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    position: fixed; /* Fix the position on the screen */
+    top: 650px; /* Distance from the top of the viewport */
+    left: 1650px; /* Distance from the left of the viewport */
+    z-index: -1; /* Adjust the z-index to control stacking order */
+    transform: rotate(195deg); 
+    position: absolute;
+    animation: rotate-and-move 10s linear infinite;
+  }
+
+  @keyframes continuous-rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg); /* You can adjust the degree of rotation */
+    }
+  }
+  
+  @keyframes rotate-and-move {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(100px, 100px) rotate(90deg);
+    }
+    50% {
+      transform: translate(200px, 0) rotate(180deg);
+    }
+    75% {
+      transform: translate(100px, -100px) rotate(270deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg);
+    }
+  }
+  
+  .rotating-and-moving-element {
+    position: absolute;
+    animation: rotate-and-move 4s linear infinite;
+  }
+  
